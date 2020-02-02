@@ -1,0 +1,25 @@
+.header-toolbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 54px 102px;
+  background: var(--transparent);
+  color: var(--app-secondary);
+
+  p {
+    font-size: 32px;
+  }
+
+  .toggle-group {
+    border-radius: 40px;
+    height: 58px;
+    background: var(--app-primary-light);
+    box-shadow: none;
+
+    .mat-button-toggle, .mat-button-toggle-checked {
+      width: 140px;
+      display: flex;
+      background-color: var(--transparent);
+      color: var(--app-secondary-light);
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<mat-toolbar class="header-toolbar" [@openClose]="hideToolbar ? 'closed' : 'open'">
+  <p>Firdous.</p>
+
+  <mat-button-toggle-group class="toggle-group" appearance="legacy">
+    <mat-button-toggle value="about">About</mat-button-toggle>
+    <mat-button-toggle value="skills">Skills</mat-button-toggle>
+    <mat-button-toggle value="work">Work</mat-button-toggle>
+    <mat-button-toggle value="education">Education</mat-button-toggle>
+  </mat-button-toggle-group>
+</mat-toolbar>
