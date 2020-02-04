@@ -23,3 +23,13 @@
     }
   }
 }
+
+@media screen and (max-width: 900px) {
+  .header-toolbar {
+    padding: 54px 46px;
+  }
+
+  .toggle-group {
+    display: none;
+  }
+}

@@ -1,5 +1,5 @@
 @import '~@angular/material/theming';
-@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
 
 @include mat-core();
 
@@ -15,14 +15,15 @@ $resume-theme: mat-light-theme($resume-primary, $resume-accent, $resume-warn);
 html, body { height: 100%; }
 body {
   margin: 0;
-  font-family: 'Ubuntu Mono', monospace;
+  font-family: 'Josefin Sans', sans-serif;
   background: var(--app-primary);
 }
 
 // Variables
 :root {
   --app-primary: #212121;
-  --app-primary-light: #616161;
+  --app-primary-light: #424242;
+  --app-primary-contrast: #ffffff;
 
   --app-secondary: #ffd740;
   --app-secondary-light: #ffe57f;
@@ -31,6 +32,6 @@ body {
 }
 
 * {
-  font-family: 'Ubuntu Mono', monospace;
+  font-family: 'Josefin Sans', sans-serif;
 }
 

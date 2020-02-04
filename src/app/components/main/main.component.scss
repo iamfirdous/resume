@@ -23,7 +23,7 @@
 
       .hello {
         font-size: 24px;
-        color: #fff;
+        color: var(--app-primary-contrast);
         margin-bottom: 12px;
       }
 
@@ -35,7 +35,7 @@
 
       .what-am-i {
         font-size: 32px;
-        color: #fff;
+        color: var(--app-primary-contrast);
         max-width: 384px;
       }
     }
@@ -47,6 +47,42 @@
       border-radius: 50%;
       border: solid 8px var(--app-primary-light);
       margin-right: 92px;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main-content {
+    .bg {
+      padding-top: 292px;
+      margin-left: 0;
+      background: linear-gradient(150deg, var(--app-primary) 50%, var(--app-secondary) 50%);
+    }
+  
+    .content {
+      flex-direction: column;
+  
+      .greetings {
+        margin: 0 46px;
+  
+        .hello {
+          font-size: 18px;
+        }
+  
+        .name {
+          font-size: 48px;
+        }
+  
+        .what-am-i {
+          font-size: 28px;
+        }
+      }
+  
+      img {
+        width: 220px;
+        height: 220px;
+        margin-right: 0;
+      }
     }
   }
 }
