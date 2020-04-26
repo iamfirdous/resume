@@ -4,8 +4,9 @@
 
   .bg {
     height: 100%;
-    margin-left: 440px;
-    background: linear-gradient(106deg, var(--app-primary) 50%, var(--app-secondary) 50%);
+    margin-left: 536px;
+    background: var(--app-secondary);
+    transform: skew(136deg, -16deg);
   }
 
   .content {
@@ -20,33 +21,49 @@
     .greetings {
       display: flex;
       flex-direction: column;
+      padding: 24px;
 
       .hello {
         font-size: 24px;
         color: var(--app-primary-contrast);
         margin-bottom: 12px;
+        line-height: 32px;
       }
 
       .name {
+        display: flex;
         font-size: 64px;
         color: var(--app-secondary);
-        margin-bottom: 12px;
+        line-height: 68px;
+
+        .white {
+          color: var(--app-primary-contrast);
+        }
+
+        .name-info {
+          font-size: 14px;
+          transform: rotate(270deg);
+          width: fit-content;
+          line-height: 12px;
+          margin: -12px 0 52px -14px;
+        }
       }
 
       .what-am-i {
-        font-size: 32px;
+        font-size: 30px;
         color: var(--app-primary-contrast);
         max-width: 384px;
+        line-height: 46px;
       }
     }
 
     img {
-      width: 320px;
-      height: 320px;
+      width: 620px;
+      height: 620px;
       object-fit: cover;
-      border-radius: 50%;
-      border: solid 8px var(--app-primary-light);
-      margin-right: 92px;
+      object-position: 100% 12%;
+      align-self: flex-end;
+      filter: grayscale(1);
     }
   }
 }
@@ -71,6 +88,10 @@
   
         .name {
           font-size: 48px;
+
+          .name-info {
+            font-size: 8px;
+          }
         }
   
         .what-am-i {

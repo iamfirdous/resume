@@ -7,19 +7,27 @@
 
   p {
     font-size: 32px;
+
+    span {
+      color: var(--app-primary-contrast);
+    }
   }
 
   .toggle-group {
-    border-radius: 40px;
     height: 58px;
-    background: var(--app-primary-light);
+    background: var(--transparent-1);
     box-shadow: none;
 
     .mat-button-toggle, .mat-button-toggle-checked {
       width: 140px;
       display: flex;
       background-color: var(--transparent);
-      color: var(--app-secondary-light);
+      color: var(--app-primary-contrast);
+    }
+
+    .mat-button-toggle:hover, .mat-button-toggle-checked:hover {
+      background: var(--app-secondary-light);
+      color: var(--app-primary);
     }
   }
 }

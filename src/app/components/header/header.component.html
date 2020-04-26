@@ -1,5 +1,9 @@
 <mat-toolbar class="header-toolbar" [@openClose]="hideToolbar ? 'closed' : 'open'">
-  <p>Firdous.</p>
+  <p>
+    <span>{{'{ '}}</span>
+    F<span>i</span>rdous<span>;</span>
+    <span>{{' }'}}</span>
+  </p>
 
   <mat-button-toggle-group class="toggle-group" appearance="legacy">
     <mat-button-toggle value="about">About</mat-button-toggle>

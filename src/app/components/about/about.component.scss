@@ -4,91 +4,34 @@
   background-color: var(--app-primary-light);
 
   .head {
-    height: 20%;
+    height: 16%;
 
-    h2 {
-      text-align: center;
-      color: var(--app-secondary);
-      margin: 0;
-      padding-top: 64px;
+    div {
+      display: flex;
+      flex-direction: column;
+      padding: 42px 112px;
+      align-items: flex-end;
+
+      .label {
+        color: var(--app-primary-contrast);
+        font-size: 40px;
+        padding: 12px;
+        background: var(--transparent-1);
+      }
+  
+      .divider {
+        width: 52px;
+        height: 3px;
+        background: var(--app-secondary);
+        border: none;
+        margin: -13px 112px;
+      }
     }
 
-    hr {
-      width: 52px;
-      height: 3px;
-      background: var(--app-secondary);
-      border: none;
-      opacity: 0.5;
-    }
   }
 
   .content {
-    height: 80%;
-    display: flex;
-    justify-content: center;
-
-    hr {
-      width: 2px;
-      height: 35%;
-      background: var(--app-secondary);
-      border: none;
-      margin: 64px;
-      opacity: 0.5;
-    }
-
-    .section {
-      max-width: 320px;
-      height: 80%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      .text {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 36px;
-
-        .small {
-          font-size: 24px;
-          color: var(--app-primary-contrast);
-          margin-bottom: 12px;
-          text-align: justify;
-        }
-
-        .big {
-          font-size: 48px;
-          color: var(--app-secondary);
-        }
-      }
-
-      img {
-        width: 320px;
-        height: 320px;
-        object-fit: contain;
-      }
-
-      .hobbies {
-        min-width: 320px;
-        min-height: 320px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-
-        img {
-          width: 80px;
-          height: 80px;
-        }
-
-        div {
-          width: 100%;
-          display: flex;
-          justify-content: space-evenly;
-          align-items: center;
-        }
-      }
-
-    }
+    
   }
 }
 
@@ -103,53 +46,6 @@
     }
   
     .content {
-      height: 90%;
-      flex-direction: column;
-      justify-content: space-evenly;
-  
-      hr {
-        width: 35%;
-        height: 2px;
-        margin: 12px auto;
-      }
-  
-      .section {
-        max-width: 100%;
-        max-height: 180px;
-        flex-direction: row;
-        justify-content: space-evenly;
-  
-        .text {
-          margin-bottom: 0;
-  
-          .small {
-            font-size: 18px;
-  
-            &.m-34 {
-              margin: 34px;
-            }
-          }
-  
-          .big {
-            font-size: 36px;
-          }
-        }
-  
-        img {
-          width: 180px;
-          height: 180px;
-        }
-  
-        .hobbies {
-          min-width: 180px;
-          min-height: 180px;
-  
-          img {
-            width: 50px;
-            height: 50px;
-          }
-        }
-      }
       
     }
   }

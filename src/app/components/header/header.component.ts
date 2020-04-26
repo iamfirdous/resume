@@ -9,7 +9,6 @@ import { map } from 'rxjs/operators';
   styleUrls: ['./header.component.scss'],
   animations: [
     trigger('openClose', [
-      // ...
       state('open', style({
         height: '108px',
         opacity: 1
